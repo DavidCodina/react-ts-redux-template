@@ -1,0 +1,139 @@
+{
+  // This set up was created from section 3 of "Testing React with Jest and Testing Library."
+  // All "rules", all rules are personal preferences.
+  "plugins": [
+    "testing-library",
+    "jest-dom"
+  ],
+
+  "extends": [
+    "react-app",
+    // "react-app/jest" was not added in the official redux/typescript template,
+    // but it is usually included in Create React App templates.
+    // It exists in node_modules/eslint-config-react-app/jest.js.
+    // It has been added back in. If it creates any conflicts in the future, it can be removed.
+    "react-app/jest", 
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+
+  "rules": {
+    "no-compare-neg-zero": "warn",
+    "no-cond-assign": "warn",
+    "no-console": "off",
+    "no-constant-condition": "warn",
+    "no-dupe-else-if": "warn",
+    "no-empty": "warn",
+    "no-extra-boolean-cast": "warn",
+    "no-extra-parens": "off",
+    "no-extra-semi": "warn",
+    "no-import-assign": "warn",
+    "no-inner-declarations": [
+      "off",
+      "functions"
+    ],
+    "consistent-return": "off",
+    "curly": [
+      "warn",
+      "all"
+    ],
+    "default-case": [
+      "warn",
+      {
+        "commentPattern": "^no default$"
+      }
+    ],
+    "guard-for-in": "warn",
+    "no-alert": "off",
+    "no-caller": "warn",
+    "no-constructor-return": "warn",
+    "no-else-return": [
+      "warn",
+      {
+        "allowElseIf": true
+      }
+    ],
+    "no-empty-function": "warn",
+    "no-eq-null": "warn",
+    "no-floating-decimal": "warn",
+    "no-implicit-coercion": "warn",
+    "no-return-assign": "off",
+    "no-return-await": "warn",
+    "yoda": "warn",
+    "no-undefined": "warn",
+    "block-spacing": [
+      "warn",
+      "always"
+    ],
+    "brace-style": [
+      "off",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "camelcase": [
+      "warn",
+      {
+        "properties": "never",
+        "ignoreDestructuring": false
+      }
+    ],
+    "comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "func-call-spacing": [
+      "warn",
+      "never"
+    ],
+    "implicit-arrow-linebreak": [
+      "error",
+      "beside"
+    ],
+    "no-lonely-if": "warn",
+    "no-multi-assign": "warn",
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "one-var-declaration-per-line": [
+      "warn",
+      "always"
+    ],
+    "operator-assignment": [
+      "warn",
+      "always"
+    ],
+    "semi-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "semi-style": [
+      "warn",
+      "last"
+    ],
+    "no-duplicate-imports": "warn",
+    "no-var": "off",
+    "prefer-const": [
+      "warn",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
+    "template-curly-spacing": "warn"
+  }
+
+}
+
+
